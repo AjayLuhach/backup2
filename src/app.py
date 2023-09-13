@@ -8,6 +8,7 @@ from flask_bcrypt import Bcrypt
 from functools import wraps
 from flask_login import current_user
 from flask_oauthlib.client import OAuth
+from  configs import config
 import random
 import string
  
@@ -19,7 +20,7 @@ app = Flask(__name__)
 bcrypt = Bcrypt(app)
 
 # load configuration from a 'config' object
-app.config.from_object('config')
+app.config.from_object(config)
 
 # set a secret key for the application (used for session management)
 app.secret_key = 'ajay'
