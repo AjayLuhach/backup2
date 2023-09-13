@@ -64,6 +64,7 @@ pip install -r requirements.txt
 ### Configuration
 
 In the application code, ensure that you configure your Google OAuth credentials and other settings appropriately.
+Also ensure to install a PostgreSQL and configure it accoridng to api with port number,username,passwordetc.
 
 ## 3. Application Structure
 
